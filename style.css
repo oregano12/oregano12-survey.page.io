@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
+
+body{
+  background: url(https://preview.pixlr.com/images/800wm/100/1/1001152062.jpg);
+font-family: 'Ubuntu', sans-serif;
+font-weight: 400;
+font-size: 1.2em;
+line-height: 1.5;
+text-align: center;
+color: black;
+}
+
+#title{
+  font-weight: 700;
+  color: #145e1e;
+  margin-bottom: 0;
+}
+
+#description{
+  font-weight: 700;
+  color: #145e1e;
+  margin-top: 0;
+}
+
+form{
+  background-color: rgb(207, 25, 25, 0.7);
+  border-radius: 15px;
+  width: 80%;
+  heigth: auto;
+  margin: 0 auto;
+}
+
+#survey-form{
+  padding: 8px 2px;
+}
+
+#name, #email, #number, #dropdown{
+  width: 50%;
+  height: 1.7em;
+  border: 1px solid;
+}
+
+#radio-survey, #checkbox-survey, #text-survey{
+  margin-bottom: 0px;
+}
+
+.radio-section, .checkbox-section{
+  text-decoration: underline;
+}
+
+textarea{
+  border: 3px solid cyan;
+  border-radius: 5px;
+}
+
+#submit{
+  border-radius: 5px;
+  background-color: #254f94;
+  padding: 5px 10px 8px 10px;
+}
+
+#submit:hover{
+  animation-name: background-color;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes background-color {
+    100% {
+      background-color: #4b77bf;
+    }
+  }

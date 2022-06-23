@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example</title>
+    <link rel="stylesheet" href="../Documentos/style.css">
+</head>
+<body>
+  <h1 id=title>Survey on Eating Habits</h1>
+  <p id="description">Help us discover how healthy is your diet!</p>
+  <form id="survey-form">
+    <label for="name" id="name-label">Name:</label><br>
+    <input type="text" id="name" name="Name" placeholder="Insert your Name" required><br>
+    
+    <label for="email" id="email-label">Email:</label><br>
+    <input type="email" id="email" name="Email" placeholder="Insert your Email" required><br>
+    
+    <label for="number" id="number-label">Age: (optional)</label><br>
+    <input type="number" id="number" name="Age" placeholder="Insert your Age" min="18" max="60"><br>
+    
+     <label for="dropdown">How many times do you eat per day?</label><br>
+  <select name="Eat" id="dropdown">
+    <option value="2times">Less than 2 times</option>
+    <option value="2-3times">2-3 times</option>
+    <option value="3-5times">3-5 times</option>
+    <option value="5times">More than 5 times</option>
+  </select><br>
+    
+    <p id="radio-survey">Do you include fruits and vegetables in your diet?</p>
+    <div class="radio-section">
+      <label for="none"><input id="none" type="radio" name="radio-survey" value="None"> None</label><br>
+    <label for="fruits"><input id="fruits" type="radio" name="radio-survey" value="Only Fruits"> Only Fruits</label><br>
+    <label for="vegetables"><input id="vegetables" type="radio" name="radio-survey" value="Only Vegetables"> Only Vegetables</label><br>
+      <label for="both"><input id="both" type="radio" name="radio-survey" value="Both"> Both</label><br>
+    </div>
+    
+    <p id="checkbox-survey">Would you give up on a healthy diet for with of the following foods?</p>
+    <div class="checkbox-section">
+    <label for="pizza"><input id="pizza" type="checkbox" name="food" value="Pizza"> Pizza</label><br>
+      <label for="hamburguer"><input id="hamburguer" type="checkbox" name="food" value="hamburguer"> Hamburguer</label><br>
+      <label for="tacos"><input id="tacos" type="checkbox" name="food" value="Tacos"> Tacos</label><br>
+    <label for="chicken"><input id="chicken" type="checkbox" name="food" value="Fried Chicken"> Fried Chicken</label><br>
+    <label for="chocolate"><input id="chocolate" type="checkbox" name="food" value="Chocolate"> Chocolate</label><br>
+    <label for="dont"><input id="dont" type="checkbox" name="food" value="I don't give up"> I don't give up</label><br>
+    </div>
+    
+    <p id="text-survey">Tell us how do you think you can improve your diet:</p>
+    <textarea id="textarea" name="textarea" rows="5" cols="33"></textarea><br>
+    
+    <button id="submit" type="submit">Submit</button>
+  </form>
+</body>
